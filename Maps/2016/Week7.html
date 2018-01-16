@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_40f614726ca7436f816f86b32dc286c5 {
+                position : relative;
+                width : 100.0%;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_40f614726ca7436f816f86b32dc286c5" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_40f614726ca7436f816f86b32dc286c5 = L.map(
+                                  'map_40f614726ca7436f816f86b32dc286c5',
+                                  {center: [51.5074,-0.1278],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_cf68ce6fbe0f4879b46603ac9120fee0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null, 
+  "detectRetina": false, 
+  "maxZoom": 18, 
+  "minZoom": 1, 
+  "noWrap": false, 
+  "subdomains": "abc"
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+        
+    
+
+            var circle_6771cc2c64a242e38dec1e02c71e717f = L.circle(
+                [51.522463,-0.15485],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 552.7857142857143, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_c3676c01f6d4432cad36feb33e138998 = L.popup({maxWidth: '300'});
+
+            
+                var html_f8949b9bc09642e8a64de5b6b4209b50 = $('<div id="html_f8949b9bc09642e8a64de5b6b4209b50" style="width: 100.0%; height: 100.0%;">Westminster: Marylebone Road</div>')[0];
+                popup_c3676c01f6d4432cad36feb33e138998.setContent(html_f8949b9bc09642e8a64de5b6b4209b50);
+            
+
+            circle_6771cc2c64a242e38dec1e02c71e717f.bindPopup(popup_c3676c01f6d4432cad36feb33e138998);
+
+            
+        
+    
+
+            var circle_b1d5e0f09edb442e94702db58658978c = L.circle(
+                [51.511949,-0.121661],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 0.0, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_549ee822a21e416a8b29fab81acfe7b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ffb4b999f8254410935cc29c6b04d97d = $('<div id="html_ffb4b999f8254410935cc29c6b04d97d" style="width: 100.0%; height: 100.0%;">Westminster: Covent Garden</div>')[0];
+                popup_549ee822a21e416a8b29fab81acfe7b0.setContent(html_ffb4b999f8254410935cc29c6b04d97d);
+            
+
+            circle_b1d5e0f09edb442e94702db58658978c.bindPopup(popup_549ee822a21e416a8b29fab81acfe7b0);
+
+            
+        
+    
+
+            var circle_b53a05b16bf943cbae9885b24b0914f0 = L.circle(
+                [51.513906,-0.152882],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 394.78571428571433, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_91d0cc72fffc40078716a7e11c1061f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_e556bce7048a4b48820d0f16648e8e9a = $('<div id="html_e556bce7048a4b48820d0f16648e8e9a" style="width: 100.0%; height: 100.0%;">Westminster: Oxford Street</div>')[0];
+                popup_91d0cc72fffc40078716a7e11c1061f8.setContent(html_e556bce7048a4b48820d0f16648e8e9a);
+            
+
+            circle_b53a05b16bf943cbae9885b24b0914f0.bindPopup(popup_91d0cc72fffc40078716a7e11c1061f8);
+
+            
+        
+    
+
+            var circle_f4a0675496b44672a72ede74196b4a9f = L.circle(
+                [51.511996,-0.116727],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 706.1428500000001, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_c879d7ce8a6d481cb3e6e223b9a50372 = L.popup({maxWidth: '300'});
+
+            
+                var html_affd31df00bf4af897c9a78bb35b4225 = $('<div id="html_affd31df00bf4af897c9a78bb35b4225" style="width: 100.0%; height: 100.0%;">Westminster: Strand - Northbank BID</div>')[0];
+                popup_c879d7ce8a6d481cb3e6e223b9a50372.setContent(html_affd31df00bf4af897c9a78bb35b4225);
+            
+
+            circle_f4a0675496b44672a72ede74196b4a9f.bindPopup(popup_c879d7ce8a6d481cb3e6e223b9a50372);
+
+            
+        
+    
+
+            var circle_ba7fc129a349472ebd12a8d25d9f4ac2 = L.circle(
+                [51.494657,-0.131968],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 0.0, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_210cd88a1bb048219828ce443352e0f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_8943e214bb564723bdcd216055903733 = $('<div id="html_8943e214bb564723bdcd216055903733" style="width: 100.0%; height: 100.0%;">Westminster: Horseferry Road</div>')[0];
+                popup_210cd88a1bb048219828ce443352e0f2.setContent(html_8943e214bb564723bdcd216055903733);
+            
+
+            circle_ba7fc129a349472ebd12a8d25d9f4ac2.bindPopup(popup_210cd88a1bb048219828ce443352e0f2);
+
+            
+        
+    
+
+            var circle_512b4aa02672409c8817bef90037efcc = L.circle(
+                [51.51739,-0.120204],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 389.14285714285717, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_87fb82a428244652b7470578456cf69b = L.popup({maxWidth: '300'});
+
+            
+                var html_862629092fda425eacb1d0caa9d458c4 = $('<div id="html_862629092fda425eacb1d0caa9d458c4" style="width: 100.0%; height: 100.0%;">Camden: Holborn</div>')[0];
+                popup_87fb82a428244652b7470578456cf69b.setContent(html_862629092fda425eacb1d0caa9d458c4);
+            
+
+            circle_512b4aa02672409c8817bef90037efcc.bindPopup(popup_87fb82a428244652b7470578456cf69b);
+
+            
+        
+    
+
+            var circle_c85f6d26b62c4e65ae0251d292f170e5 = L.circle(
+                [51.522277,-0.125858],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 276.1428571428571, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_faaebaeffaee4594baf493abf2885f6a = L.popup({maxWidth: '300'});
+
+            
+                var html_8274e1f2fa1b4adbba8f4ac9cfa16e16 = $('<div id="html_8274e1f2fa1b4adbba8f4ac9cfa16e16" style="width: 100.0%; height: 100.0%;">Camden: Bloomsbury</div>')[0];
+                popup_faaebaeffaee4594baf493abf2885f6a.setContent(html_8274e1f2fa1b4adbba8f4ac9cfa16e16);
+            
+
+            circle_c85f6d26b62c4e65ae0251d292f170e5.bindPopup(popup_faaebaeffaee4594baf493abf2885f6a);
+
+            
+        
+    
+
+            var circle_940292c9e35749d99d26b200aef7fc4e = L.circle(
+                [51.52769,-0.129053],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 519.6428571428571, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_d7822465e46a49a3be6f153771fbcddc = L.popup({maxWidth: '300'});
+
+            
+                var html_01ad58b961234024917517e3c4db3990 = $('<div id="html_01ad58b961234024917517e3c4db3990" style="width: 100.0%; height: 100.0%;">Camden: Euston Road</div>')[0];
+                popup_d7822465e46a49a3be6f153771fbcddc.setContent(html_01ad58b961234024917517e3c4db3990);
+            
+
+            circle_940292c9e35749d99d26b200aef7fc4e.bindPopup(popup_d7822465e46a49a3be6f153771fbcddc);
+
+            
+        
+    
+
+            var circle_fe5c512743fa4bd79c9f1f7fe00130ab = L.circle(
+                [51.5105,-0.09163],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 592.7142785714286, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_d44fa6a2afa74a38a5a25fc1d0a12a3e = L.popup({maxWidth: '300'});
+
+            
+                var html_55a6f193771748559fcb93e6134321f4 = $('<div id="html_55a6f193771748559fcb93e6134321f4" style="width: 100.0%; height: 100.0%;">City of London: Walbrook Wharf</div>')[0];
+                popup_d44fa6a2afa74a38a5a25fc1d0a12a3e.setContent(html_55a6f193771748559fcb93e6134321f4);
+            
+
+            circle_fe5c512743fa4bd79c9f1f7fe00130ab.bindPopup(popup_d44fa6a2afa74a38a5a25fc1d0a12a3e);
+
+            
+        
+    
+
+            var circle_dbdb2026e2354ed6a230e65431ca4e85 = L.circle(
+                [51.493154,-0.101531],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 263.85714285714283, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_e2d57a7d6ad54eb4998147ef8771c345 = L.popup({maxWidth: '300'});
+
+            
+                var html_7169b98403fc4e72839936d2f55c7388 = $('<div id="html_7169b98403fc4e72839936d2f55c7388" style="width: 100.0%; height: 100.0%;">Southwark: Elephant and Castle</div>')[0];
+                popup_e2d57a7d6ad54eb4998147ef8771c345.setContent(html_7169b98403fc4e72839936d2f55c7388);
+            
+
+            circle_dbdb2026e2354ed6a230e65431ca4e85.bindPopup(popup_e2d57a7d6ad54eb4998147ef8771c345);
+
+            
+        
+    
+
+            var circle_3e2f3fb2133c46c5b49b5690226298d0 = L.circle(
+                [51.520238,-0.096117],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 599.2142785714286, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_355fad846b7e4316a213e79c4baf0eee = L.popup({maxWidth: '300'});
+
+            
+                var html_ac4768edcc624a9486509137508e894b = $('<div id="html_ac4768edcc624a9486509137508e894b" style="width: 100.0%; height: 100.0%;">City of London: Beech Street</div>')[0];
+                popup_355fad846b7e4316a213e79c4baf0eee.setContent(html_ac4768edcc624a9486509137508e894b);
+            
+
+            circle_3e2f3fb2133c46c5b49b5690226298d0.bindPopup(popup_355fad846b7e4316a213e79c4baf0eee);
+
+            
+        
+    
+
+            var circle_3a0b9938965e4ca1a8cdd3593a68e25d = L.circle(
+                [51.51382,-0.077815],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 281.42857142857144, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_0179209789684baaaa270adc47ee33a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_9a5baaace6a5499583c1fef0b46ecb56 = $('<div id="html_9a5baaace6a5499583c1fef0b46ecb56" style="width: 100.0%; height: 100.0%;">City of London: Sir John Cass School</div>')[0];
+                popup_0179209789684baaaa270adc47ee33a6.setContent(html_9a5baaace6a5499583c1fef0b46ecb56);
+            
+
+            circle_3a0b9938965e4ca1a8cdd3593a68e25d.bindPopup(popup_0179209789684baaaa270adc47ee33a6);
+
+            
+        
+    
+
+            var circle_8ca8dc8a3d2a4363b35166a9aa5de4a1 = L.circle(
+                [51.52645,-0.084922],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "crimson", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "crimson", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 349.8571428571428, 
+  "stroke": true, 
+  "weight": 3
+}
+                ).addTo(map_40f614726ca7436f816f86b32dc286c5);
+            
+    
+            var popup_24892e5ef3e7441f9a0757ce2fcf4401 = L.popup({maxWidth: '300'});
+
+            
+                var html_6c57787586144b2ab5d3024bb662215d = $('<div id="html_6c57787586144b2ab5d3024bb662215d" style="width: 100.0%; height: 100.0%;">Hackney: Old Street</div>')[0];
+                popup_24892e5ef3e7441f9a0757ce2fcf4401.setContent(html_6c57787586144b2ab5d3024bb662215d);
+            
+
+            circle_8ca8dc8a3d2a4363b35166a9aa5de4a1.bindPopup(popup_24892e5ef3e7441f9a0757ce2fcf4401);
+
+            
+        
+</script>
